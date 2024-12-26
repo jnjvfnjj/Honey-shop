@@ -1,0 +1,287 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Заголовки и текст */
+header h1, header p {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #faf7f8;
+}
+
+/* Навигация */
+.navbar {
+    text-align: center;
+    background-color: #f77d91;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #faf7f8;
+    font-weight: 500;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Хедер */
+header {
+    background-color: #f77d91;  /* Розовый фон */
+    padding: 30px 0;
+    color: rgb(255, 255, 255);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ffffff;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;  /* Увеличил паддинг для лучшего эффекта */
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section h2 {
+    font-size: 3.5rem;  /* Увеличил размер для выделения */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.5rem;  /* Увеличил для лучшего восприятия */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-section .btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    color: #f77d91;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #f77d91;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .order-text {
+    font-size: 1.1rem;
+    color: #f9f9f9;
+    margin-top: 30px;
+}
+
+.hero-section .order-text a {
+    color: #f77d91;
+    text-decoration: none;
+}
+
+.hero-section .order-text a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер и карточки */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* Футер */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        display: block;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .hero-section {
+        background-color: #362e46;
+        background-image: url('image.png');
+        background-size: cover;
+        background-position: center;
+        padding: 120px 0;
+        text-align: center;
+        color: rgb(81, 86, 116);
+        position: relative;
+    }
+
+    .hero-section h2 {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .hero-section p {
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .hero-section .welcome-message {
+        background-color: rgba(0, 0, 0, 0.6);  /* Добавим более темный фон */
+        padding: 30px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        color: rgb(231, 177, 177); /* Белый цвет для текста */
+    }
+
+    .hero-section .welcome-message h3 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        color: #c3afb2; /* Розовый цвет для заголовка */
+    }
+
+    .hero-section .welcome-message p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #eae6e7;
+    }
+
+    .hero-section .btn {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        background-color: rgb(255, 254, 254);
+        border: none;
+        border-radius: 30px;
+        color: #f77d91;
+        text-transform: uppercase;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero-section .btn:hover {
+        background-color: #f77d91;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Контейнер для формы */
+.form-row {
+    display: block;  /* Используем блоковое расположение для вертикальной ориентации */
+}
+
+/* Каждое поле в форме будет занимать 100% от ширины родительского контейнера */
+.form-row .form-control {
+    width: 100%;
+    margin-bottom: 15px; /* Добавим отступ между полями */
+}
+
+/* Лейблы */
+.form-label {
+    font-weight: 600;
+}
+
+/* Кнопка */
+.btn-warning {
+    background-color: #ffbc00;
+    border-color: #ffbc00;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+}

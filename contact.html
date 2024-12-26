@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bee Honey Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hero-section {
+            background-image: url('style/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+        }
+
+        .contact-form {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        /* Контейнер для формы */
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Каждое поле в форме будет занимать 48% от ширины родительского контейнера */
+        .form-row .form-control {
+            width: 48%;
+        }
+
+        /* Лейблы */
+        .form-label {
+            font-weight: 600;
+        }
+
+        /* Кнопка */
+        .btn-warning {
+            background-color: #ffbc00;
+            border-color: #ffbc00;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .btn-warning:hover {
+            background-color: #e6a800;
+            border-color: #e6a800;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .hero-section h2 {
+                font-size: 28px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            /* На маленьких экранах формы становятся вертикальными */
+            .form-row {
+                flex-direction: column;
+            }
+
+            .form-row .form-control {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .btn-warning {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Bee Honey Store</h1>
+        <p>Your source for the finest natural honey</p>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav mx-auto">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="honey-types.html">Honey Types</a>
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                        <a class="nav-link" href="order.html">Order</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section style="text-align: center;">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please use the form below to reach out to us.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <form class="row g-3">
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-12">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-warning">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Contact Details Section -->
+        <section class="mt-5 text-center">
+            <h3>Our Contact Details</h3>
+            <p>Email: <a href="mailto:support@beehoneystore.com">support@beehoneystore.com</a></p>
+            <p>Phone: +123 456 789</p>
+            <p>Address: 123 Honey Lane, Beeville, Country</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Bee Honey Store. All rights reserved.</p>
+    </footer>
+
+    <script src="style/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

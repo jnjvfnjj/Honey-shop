@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Bee Honey Store</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        .form-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control, .form-select, .btn-warning {
+            border-radius: 5px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .btn-warning {
+            background-color: #ffcc00;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-warning:hover {
+            background-color: #e6b800;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-warning text-dark text-center p-4">
+        <h1>Bee Honey Store</h1>
+        <p>Your source for the best natural honey</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bee Honey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="honey-types.html">Types of Honey</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="order.html">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center">
+            <h2 class="section-title">Order Honey</h2>
+            <p class="section-description">Place your order for our delicious and natural honey below.</p>
+        </section>
+
+        <section class="mt-5">
+            <div class="form-container">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="honey-type" class="form-label">Select Honey Type</label>
+                        <select class="form-select" id="honey-type" required>
+                            <option value="" disabled selected>Select a type...</option>
+                            <option value="flower">Flower Honey</option>
+                            <option value="forest">Forest Honey</option>
+                            <option value="acacia">Acacia Honey</option>
+                            <option value="buckwheat">Buckwheat Honey</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="quantity" class="form-label">Quantity (in kg)</label>
+                        <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" min="1" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Delivery Address</label>
+                        <textarea class="form-control" id="address" rows="3" placeholder="Enter your delivery address" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-warning">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-warning text-dark text-center p-3">
+        <p>&copy; 2024 Bee Honey Store. All rights reserved.</p>
+    </footer>
+
+    <script src="style/bootstrap.bundle.min.js"></script>
+</body>
+</html>
